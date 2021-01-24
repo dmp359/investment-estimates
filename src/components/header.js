@@ -23,8 +23,8 @@ const Header = () => {
       <TabNavigation>
         {[
           { loc: '/', display: 'Home' },
-          { loc: '/home-purchase', display: 'App' },
-          { loc: '/404', display: 'Donate' },
+          { loc: '/home-purchase/', display: 'App' },
+          { loc: '/404/', display: 'Donate' },
         ].map(({ loc, display }) => (
           <Tab key={loc} is='a' href={loc} id={loc} isSelected={history.location.pathname === loc}>
             {display}
